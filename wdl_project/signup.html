@@ -169,7 +169,7 @@
                             <div class="login-form signup-form">
                                 <h4 class="login-title ">REGISTER</h4>
                                
-                                    <form id="contactForm" method="POST" action="http://rockstheme.com/rocks/aievari-live/contact.php" class="log-form">
+                                   <!-- <form id="contactForm" method="POST" action="http://rockstheme.com/rocks/aievari-live/contact.php" class="log-form">
                                         <div class="col-md-12 col-sm-12 col-xs-12">
                                             <input type="text" id="name" class="form-control" placeholder="Username" required data-error="Please enter your name">
                                         </div>
@@ -204,7 +204,44 @@
                                                 <div class="acc-not">have an account?  <a href="login.html">Login</a></div>
                                             </div>
                                         </div>
-                                    </form> 
+                                    </form> -->
+
+                                    <form id="contactForm" action="signupaction.php" method="POST"  class="log-form">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <input type="text" id="name" name="user_name" class="form-control" placeholder="Username" required data-error="Please enter your name">
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <input type="email" id="email" name="user_email" class="form-control" placeholder="Your Email" required data-error="Please enter your name">
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <input type="password" id="msg_subject"  name="password" class="form-control" placeholder="Password" required data-error="Please enter your message subject">
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12 ">
+                                            <div class="check-group flexbox">
+                                                <label class="check-box">
+                                                    <input type="checkbox" class="check-box-input" checked>
+                                                    <span class="remember-text">I agree terms & conditions</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <button type="submit" id="submit" name="Sign up" class="login-btn">Sign up</button>
+                                            <div id="msgSubmit" class="h3 hidden"></div> 
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="clear"></div>
+                                            <div class="separetor"><span>Or with signup</span></div>
+                                            <div class="sign-icon">
+                                                <ul>
+                                                    <li><a class="facebook" href="#">Facebook</a></li>
+                                                    <li><a class="twitter" href="#">twitter</a></li>
+                                                    <li><a class="google" href="#">google+</a></li>
+                                                </ul>
+                                                <div class="acc-not">have an account?  <a href="login.html">Login</a></div>
+                                            </div>
+                                        </div>
+                                    </form>
                               
                             </div>
                         </div>
